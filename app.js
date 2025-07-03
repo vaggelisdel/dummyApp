@@ -21,6 +21,26 @@ app.get('/products', (req, res) => {
   ]);
 });
 
+app.get('/foods', (req, res) => {
+  res.json([
+    { id: 1, name: 'Pizza', calories: 500 },
+    { id: 2, name: 'Burger', calories: 600 },
+    { id: 3, name: 'Sushi', calories: 700 },
+    { id: 4, name: 'Pasta', calories: 400 },
+    { id: 5, name: 'Salad', calories: 300 }
+  ]);
+});
+
+app.get('users', (req, res) => {
+  res.json([
+    { id: 1, name: 'New York', population: 1000000 },
+    { id: 2, name: 'London', population: 900000 },
+    { id: 3, name: 'Tokyo', population: 800000 },
+    { id: 4, name: 'Paris', population: 700000 },
+    { id: 5, name: 'Sydney', population: 600000 }
+  ]);
+});
+
 app.listen(3000, () => {
   console.log('Server running on port 3000');
 });
