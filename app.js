@@ -31,7 +31,7 @@ app.get('/foods', (req, res) => {
   ]);
 });
 
-app.get('users', (req, res) => {
+app.get('cities', (req, res) => {
   res.json([
     { id: 1, name: 'New York', population: 1000000 },
     { id: 2, name: 'London', population: 900000 },
